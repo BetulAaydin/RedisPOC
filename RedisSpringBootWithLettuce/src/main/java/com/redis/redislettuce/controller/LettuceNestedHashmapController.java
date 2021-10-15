@@ -22,7 +22,9 @@ public class LettuceNestedHashmapController {
 	 private RedisTemplate<String, Map<String, Object>> redisTemplate;
 	
 	
-
+	@Autowired
+	@Qualifier("redisClusterConnectionFactory")
+	 private RedisTemplate<String, Map<String, Object>> redisClusterTemplate;
 	
 	@RequestMapping(value = "/storeKeyValue/{hashKey}/{value}", method = RequestMethod.GET)
     public @ResponseBody String storeNestedhash(@PathVariable String hashKey,@PathVariable String value) {	   	
