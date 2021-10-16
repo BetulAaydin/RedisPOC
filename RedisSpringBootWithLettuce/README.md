@@ -1,16 +1,14 @@
 # RedisLettuceApplication
 # Simple spring boot project for connection Redis and execute its commands.
 
-
-```
 ## Run The Project
 ```txt
     mvn spring-boot:run
-	 ```
-    or
-	```txt
+```
+or
+```txt
    Run com.redis.redislettuce.RedislettuceApplication as a Java Application.
-   ```
+ ```
 
 ## Definition
  -End point:http://localhost:8080
@@ -31,7 +29,7 @@ VALUE=FirstRedisValue.
 
 ```txt
 KEY= fistRediskey
- >curl http://localhost:8080/redislettuce/getKeyValue/firstRediskey  
+ curl http://localhost:8080/redislettuce/getKeyValue/firstRediskey  
 ```
 
 
