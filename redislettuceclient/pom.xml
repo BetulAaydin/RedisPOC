@@ -1,0 +1,87 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.redislettuceclient</groupId>
+  <artifactId>redislettuceclient</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>redislettuceclient</name>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+   <dependency>
+            <groupId>io.lettuce</groupId>
+            <artifactId>lettuce-core</artifactId>
+            <version>6.0.1.RELEASE</version>
+        </dependency>
+    <dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-redis</artifactId>
+    <version>2.5.4</version>
+      
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.12.4</version>
+</dependency>
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.12.4</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.12.4</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-pool2</artifactId>
+    <version>2.9.0</version>
+</dependency>
+  </dependencies>
+  <build>
+		<finalName>redislettuceclient_jar</finalName>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+		<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+				<configuration>
+			
+					<includes>
+						<include>**/*</include>
+					</includes>
+				</configuration>
+				<executions>
+					<execution>
+						<id>package-jar-mayaintegration</id>
+						<phase>package</phase>
+						<configuration>
+							<classifier>classes</classifier>
+							<finalName>redislettuceclient</finalName>
+							<includes>
+								<include>**/*</include>
+							</includes>
+						</configuration>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			</plugins>
+	</build>
+</project>
