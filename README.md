@@ -5,7 +5,7 @@ Sample codes of Redis integration with lettuce library for Spring Boot/Spring Re
 
 ## Docs
 
-[Hybrid Session Management with Sticky Session and Redis](./docs/GUIDE.md)([medium's link](https://medium.com/@betul5634/hybrid-session-infrastructure-with-sticky-session-and-redis-dd5b32996d09))
+[Hybrid Session Management with Sticky Session and Redis](https://medium.com/@betul5634/hybrid-session-infrastructure-with-sticky-session-and-redis-dd5b32996d09))
 
 
 
