@@ -1,35 +1,27 @@
 # RedisLettuceApplication
-# Simple spring boot project for connection Redis and execute its commands.
+# Simple Java project for connection Redis and execute its commands.
 
 ## Run The Project
 ```txt
-    mvn spring-boot:run
+  Run ResidLettuceTest.java  as a Java Application.
 ```
-or
-```txt
-   Run com.redis.redislettuce.RedislettuceApplication as a Java Application.
- ```
+
 
 ## Definition
- -End point:http://localhost:8080
- -Redis Server:redis://127.0.0.1:6379
+ ```txt
+ RedisJacsonSerializeOperations.java class is contains example code for serialization with jacson library
+ https://github.com/BetulAaydin/RedisPOC/blob/main/redislettuceclient/src/main/java/redislettuceclient/RedisJacsonSerializeOperations.java
+ ```
  
+  ```txt
+ RedisSerilazedCodecOperation.java class example codes;
+ Redis standalone connection 
+ Redis Cluster connection
+ SerializationCodec definiton on redis connection
+  
+ https://github.com/BetulAaydin/RedisPOC/blob/main/redislettuceclient/src/main/java/redislettuceclient/RedisSerilazedCodecOperation.java
+ 
+ ```
 
-
-### set key value operation
-The curl command below requests for redislettuce/storeKeyValue operations to store as;
-KEY= fistRediskey
-VALUE=FirstRedisValue.
-
-```txt
- curl http://localhost:8080/redislettuce/storeKeyValue/firstRediskey/FirstRedisValue
-```
-
-### get key value operation
-
-```txt
-KEY= fistRediskey
- curl http://localhost:8080/redislettuce/getKeyValue/firstRediskey  
-```
 
 
